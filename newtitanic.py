@@ -86,15 +86,6 @@ class General():
         self.df['Embarked'] = self.df['Embarked'].map(lambda x: self.embark(x))
         self.df['Sex'] = self.df['Sex'].map(lambda x: self.gender(x))
         
-        # header = self.df.columns.values.tolist()
-        # sex_index = self.df.columns.get_loc('Sex')
-        # embarked_index = self.df.columns.get_loc('Embarked')
-        # cabin_index = self.df.columns.get_loc('Cabin')
-        # self.df.apply()
-        # ticket_index = self.df.columns.get_loc('Ticket')
-        # passenger_index = self.df.columns.get_loc('PassengerId')
-        # name_index = self.df.columns.get_loc('Name')
-        
         return self.df
     
     def input_mean_for_missing_rows(self):
